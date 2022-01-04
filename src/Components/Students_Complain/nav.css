@@ -1,0 +1,46 @@
+.navbar2 {
+  height: 10vh;
+  width: 100%;
+  background-color: #343a40;
+  overflow: hidden;
+  z-index: 56;
+}
+
+.nav-link2 {
+  font-size: 2rem;
+  color: white;
+}
+
+.navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  padding: 0 0 0 2rem;
+}
+.nav-list2 {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  padding: 2rem 3rem 2rem 2rem;
+}
+
+.blue2 {
+  color: #6c63ff;
+}
+
+.nav-link2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.nav-link2:hover {
+  color: #6c63ff;
+}

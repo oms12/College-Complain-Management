@@ -1,0 +1,53 @@
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background-color: #343a40;
+  position: fixed;
+  z-index: 56;
+}
+
+.nav-link {
+  font-size: 2rem;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  padding: 2rem 3rem 2rem 2rem;
+}
+
+.blue {
+  color: #6c63ff;
+}
+
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+
+.nav-link::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #c29525;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -ms-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+}
+.nav-link:hover::before {
+  width: 100%;
+}

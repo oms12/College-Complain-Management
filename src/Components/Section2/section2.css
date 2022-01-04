@@ -1,0 +1,134 @@
+.section_2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #1e2124;
+  background-image: url(./Image/world3.svg);
+}
+.form_part {
+  width: 70%;
+  height: 10vh;
+  background-color: #1e2124;
+  margin-left: 15%;
+  margin-top: 15vh;
+  position: absolute;
+}
+.filter_section {
+  height: 65vh;
+  width: 70%;
+  margin-top: 30vh;
+  margin-bottom: 4vh;
+  margin-left: 15%;
+  background-color: #0000;
+  z-index: 50;
+  position: absolute;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_part {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form_part_1 {
+  width: 40%;
+  height: 100%;
+}
+
+.form_part_1 form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form_part_1 form label {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.select {
+  width: 100%;
+
+  padding: 0.4rem;
+}
+
+.label {
+  color: white;
+}
+
+/* form part 2 */
+.form_part_2 {
+  width: 40%;
+  height: 100%;
+}
+
+.form2 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.label2 {
+  font-size: 2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.input2 {
+  padding: 0.4rem;
+  font-family: "Roboto", sans-serif;
+}
+/* filter section */
+.content_part {
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  z-index: 490;
+  font-size: 3rem;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.id {
+  width: 10%;
+  color: #2f2e41;
+}
+
+.subject {
+  width: 40%;
+}
+
+.department {
+  width: 20%;
+}
+
+.date {
+  width: 10%;
+}
+
+.content_part2 {
+  height: 10%;
+  width: 100%;
+
+  z-index: 490;
+  font-size: 3rem;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.id2,
+.subject2,
+.department2,
+.date2 {
+  color: white;
+}
