@@ -58,4 +58,23 @@ export const deleteComplain= async (req,res)=>
     }
 }
 
+// history checkup abhi filhaal maine resolved == true kr dia h you can see it 
+export const adminHistory = async (req,res)=>
+{
+    const department = req.params.department;
+    console.log(department);
+    try {
+        const history = await Complain.find({department : department, resolved : true});
+        res.status(200).json(history);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
+
+
+
+
+
 export default router;

@@ -17,11 +17,12 @@ function App() {
             <Routes>
             <Route path="/"  element= {<><Home_Nav /> <Section /></>}   />
             <Route path="/student" element= {<><Students_Nav /> <Section /></>} />
-            <Route path="/admin" element= {<><Admin_Nav /> <Section /></>} /> 
-            <Route path="/adminComplains" element= {<><Admin_Nav /> <Section2/></>} />
-            <Route path="/studentComplains" element= {<><Students_Nav /> <Section2 /></>} />
-            <Route path="/studentnewComplain" element= {<><Students_Nav /> <Students_Complain /></>} />
-            <Route path="/studentHistory" element= {<><Students_Nav /> <Section2 /></>} />
+            <Route path="/student/complains" element= {<><Students_Nav /> <Section2 /></>} />
+            <Route path="/student/newcomplain" element= {<><Students_Nav /> <Students_Complain /></>} />
+            <Route path="/student/history" element= {<><Students_Nav /> <Section2 /></>} />
+            <Route path="/admin" element = {<><Admin_Nav /> <Section /></>} /> 
+            <Route path="/admin/history" element= {<><Admin_Nav /> <Section2 /></>} />
+            <Route path="/admin/complains" element= {<><Admin_Nav /> <AdminComplaints/></>} />
             </Routes>
         </BrowserRouter>
 

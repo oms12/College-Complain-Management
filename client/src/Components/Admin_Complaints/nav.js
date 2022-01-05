@@ -8,13 +8,13 @@ const NavAdmin = () => {
           Hello
         </a>
         <div class="nav-list3">
-          <a href="" class="nav-link3 blue3">
+          <a href="/admin" class="nav-link3 blue3">
             Home
           </a>
-          <a href="" class="nav-link3">
+          <a href="/admin/history" class="nav-link3">
             History
           </a>
-          <a href="" class="nav-link3">
+          <a href="/admin/complains" class="nav-link3">
             Complain
           </a>
           <a href="" class="nav-link3">

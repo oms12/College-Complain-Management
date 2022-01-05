@@ -11,13 +11,13 @@ const Nav = () => {
           <a href="/student" class="nav-link2 blue2">
             Home
           </a>
-          <a href="/studentComplains" class="nav-link2" data-content="Complaints">
+          <a href="/student/complains" class="nav-link2" data-content="Complaints">
           Complaints
           </a>
-          <a href="" class="nav-link2">
+          <a href="/student/history" class="nav-link2">
             History
           </a>
-          <a href="/studentnewComplain" class="nav-link2">
+          <a href="/student/newcomplain" class="nav-link2">
             New Complain
           </a>
           <a href="" class="nav-link2">

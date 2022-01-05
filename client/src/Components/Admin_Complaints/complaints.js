@@ -1,11 +1,9 @@
 import React from "react";
-import NavAdmin from "./nav";
 import "./complaint.css";
 
 const AdminComplaints = () => {
   return (
     <div className="section-3">
-      <NavAdmin />
       <div class="main-div">
         <div class="first-row">
           <div>
