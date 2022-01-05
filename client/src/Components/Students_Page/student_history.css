@@ -1,0 +1,40 @@
+.complain_part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.complain_part_1 {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: white;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.complain_part_2 {
+  padding-top: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.delete {
+  height: 80%;
+  width: 140%;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.delete:hover {
+  background: transparent;
+  border: 1px solid black;
+  color: white;
+}
