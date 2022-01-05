@@ -20,7 +20,7 @@ export const getComplain = async (req,res)=>
 export const findComplain = async (req,res)=>
 {
     try {
-        const complain = Complain.find({_id : req.params.id});
+        const complain = Complain.findOne({_id : req.params.id});
         console.log(complain);
         res.status(200).json(complain);
 
@@ -36,7 +36,7 @@ export const findComplain = async (req,res)=>
 export const resolveComplain = async (req,res)=>
 {
     try {
-        const complain = Complain.find({_id : req.params.id});
+        const complain = Complain.findOne({_id : req.params.id});
         /// after finding the complain you have to perform the update and fill the resolve section
         // after that save it to the database and update it as resolved.
         res.status(200).json("resolved");

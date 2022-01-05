@@ -22,7 +22,8 @@ export const createComplain = async (req,res)=>
 {
         const complain = {
             rollno : req.body.rollno,
-            title : req.body.title,
+            date : req.body.date,
+            department : req.body.department,
             subject : req.body.subject,
             message : req.body.message
         }
@@ -39,8 +40,9 @@ export const createComplain = async (req,res)=>
 /** yha problem h ki hum id se kaise dekhe we will manage it later*/
 export const findComplain = async (req,res)=>
 {
+    console.log(req.params.id);
     try {
-        const complain = Complain.find({_id : req.params.id});
+        const complain = await Complain.findOne({_id : req.params.id});
         console.log(complain);
         res.status(200).json(complain);
 
@@ -60,5 +62,6 @@ export const deleteComplain= async (req,res)=>
        console.log(error);
     }
 }
+
 
 export default router;

@@ -5,16 +5,13 @@ import Chats from "./Components/Chats/chats";
 
 import AdminComplaints from "./Components/Admin_Complaints/complaints";
 import Section2 from "./Components/Section2/section2";
-import Students_Complain from "./Components/Students_Complain/section3";
+import Students_Complain from "./Components/Students_Complain/complain";
 
 function App() {
   return (
     <div className="App">
-      <Section />
-      <Section2 />
-      {/* <Section3 /> */}
-      {/* <Students_Complain /> */}
-      {/* <AdminComplaints /> */}
+      {/* <Section2 /> */}
+      <Students_Complain />
     </div>
   );
 }

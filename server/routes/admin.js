@@ -5,7 +5,7 @@ const router = express.Router();
 router.get("/",getComplain);
 router.post("/resolve", resolveComplain);
 router.delete("/:id",deleteComplain);
-router.get("/:id",findComplain);
+router.get("/complain/:id",findComplain);
 
 
 export default router;

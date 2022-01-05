@@ -1,24 +1,59 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./section2.css";
 import History from "./history";
+
+
+const url = "http://localhost:3000/student";
 const Section2 = () => {
+   const [complains,setcomplains] = useState([]);
+   const [need,setneed] = useState([]);
+  useEffect(()=>
+  {
+    async function getComplains()
+    {
+       const res =  await axios.get(url);
+       setneed(res.data);
+       setcomplains(res.data);
+    }
+    getComplains();
+  },[]);
+
+  async function handleChange(event)
+  {
+      const {name,value} = event.target;
+      if(value === "No Filter")
+      {
+        setcomplains(need);
+      }
+      else{
+        const res = need.filter((complain)=>
+        {
+          return (complain.department === value);
+        })
+        setcomplains(res);
+      }
+  }
+
+
+
+
+
   return (
     <div className="section_2">
       <div className="form_part">
         <div className="form_part_1">
-          <form action="/action_page.php">
-            <label for="cars" className="label">
+          <form >
+            <label className="label">
               Filter by department
             </label>
-            <select id="cars" name="cars" className="select">
-              <option value="volvo" default>
+            <select   className="select"  onChange={handleChange}>
+              <option value="No Filter" default>
                 No Filter
               </option>
-              <option value="sports">Sports</option>
+              <option value="Sport">Sports</option>
               <option value="meals">Meals</option>
               <option value="library">Library</option>
-              <option value="others">Others</option>
             </select>
           </form>
         </div>
@@ -39,12 +74,12 @@ const Section2 = () => {
       </div>
       <div className="filter_section">
         <div className="content_part">
-          <div className="id">Id</div>
+          <div className="id">Rollno</div>
           <div className="subject">Subject</div>
           <div className="department">Department</div>
           <div className="date">Date</div>
         </div>
-        <History
+        {/* <History
           id="1"
           subject="i hate sports "
           department="sports"
@@ -55,13 +90,19 @@ const Section2 = () => {
           subject="i hate sports "
           department="sports"
           date="7/02/2020"
-        />
-        {/* <div className="content_part2">
-          <div className="id id2">1</div>
-          <div className="subject subject2">I Hate sports</div>
-          <div className="department department2">sports</div>
-          <div className="date date2">7/02/2002</div>
-        </div> */}
+        /> */}
+        {complains.map((complain)=>
+        {
+          return(
+            <History
+            complain = {complain}
+            id = {complain.rollno}
+            subject={complain.subject}
+            department={complain.department}
+            date={complain.date}
+           />
+          );
+        })}
       </div>
     </div>
   );

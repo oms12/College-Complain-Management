@@ -1,6 +1,7 @@
 import React from "react";
 import "./section2.css";
 const History = ({ id, subject, department, date }) => {
+  date = date.split("T")[0];
   return (
     <>
       <div className="content_part2">
