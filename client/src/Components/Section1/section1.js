@@ -5,7 +5,6 @@ import Reactlogo from "./Image/pic1.svg";
 const Section = () => {
   return (
     <div className="section-1">
-      <Navbar />
       <div className="section1__container">
         <div className="section1__writing_part">
           <div className="writing_part">
