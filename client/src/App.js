@@ -76,7 +76,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       {/* <Section /> */}
-      {/* <Admin_Page /> */}
+      {/* <AdminComplaints /> */}
       {/* <Home_Nav /> */}
     </div>
   );
