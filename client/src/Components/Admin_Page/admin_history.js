@@ -2,6 +2,7 @@ import React from "react";
 import "./admin_history.css";
 
 const Admin_History = ({ roll_no, subject, date }) => {
+  date = date.split("T")[0];
   return (
     <div className="complain_part_admin">
       <div className="complain_part_1_admin">

@@ -2,6 +2,7 @@ import React from "react";
 import "./student_history.css";
 
 const Student_History = ({ depart, subject, date }) => {
+  date = date.split("T")[0];
   return (
     <div className="complain_part">
       <div className="complain_part_1">

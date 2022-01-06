@@ -62,6 +62,17 @@ export const deleteComplain= async (req,res)=>
        console.log(error);
     }
 }
-
+ // history checkup
+export const studentHistory = async (req,res)=>
+{
+    const rollno = req.params.rollno;
+    console.log(rollno);
+    try {
+        const history = await Complain.find({rollno : rollno , resolved : false});
+        res.status(200).json(history);
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 export default router;
