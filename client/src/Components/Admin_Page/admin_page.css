@@ -1,0 +1,51 @@
+.ADMIN_PAGE {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+.passed_2_admin {
+  width: 100%;
+  height: 90%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+.img2_admin {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.student_history_admin {
+  position: absolute;
+  height: 80%;
+  width: 70%;
+
+  top: 20%;
+  left: 15%;
+}
+
+.department_admin {
+  width: 20%;
+}
+
+.subject_admin {
+  width: 40%;
+}
+.date_admin {
+  width: 10%;
+}
+.title_admin {
+  background-color: white;
+  height: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+}

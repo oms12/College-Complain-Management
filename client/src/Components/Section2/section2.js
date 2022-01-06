@@ -5,7 +5,7 @@ import History from "./history";
 
 
 const url = "http://localhost:3000/student";
-const Section2 = () => {
+const Section2 = (props) => {
    const [complains,setcomplains] = useState([]);
    const [need,setneed] = useState([]);
   useEffect(()=>
@@ -34,7 +34,7 @@ const Section2 = () => {
         setcomplains(res);
       }
   }
-
+  
 
 
 
@@ -74,32 +74,22 @@ const Section2 = () => {
       </div>
       <div className="filter_section">
         <div className="content_part">
-          <div className="id">Rollno</div>
-          <div className="subject">Subject</div>
-          <div className="department">Department</div>
-          <div className="date">Date</div>
+          <div className="section2id">Rollno</div>
+          <div className="section2subject">Subject</div>
+          <div className="section2department">Department</div>
+          <div className="section2date">Date</div>
+          <div className="section2Details">Details</div>
         </div>
-        {/* <History
-          id="1"
-          subject="i hate sports "
-          department="sports"
-          date="7/02/2020"
-        />
-        <History
-          id="1"
-          subject="i hate sports "
-          department="sports"
-          date="7/02/2020"
-        /> */}
         {complains.map((complain)=>
         {
           return(
             <History
             complain = {complain}
-            id = {complain.rollno}
-            subject={complain.subject}
-            department={complain.department}
-            date={complain.date}
+            id = {complain._id}
+            rollno = {complain.rollno}
+            subject = {complain.subject}
+            department = {complain.department}
+            date = {complain.date}
            />
           );
         })}

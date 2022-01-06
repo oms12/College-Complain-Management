@@ -64,7 +64,7 @@ export const adminHistory = async (req,res)=>
     const department = req.params.department;
     console.log(department);
     try {
-        const history = await Complain.find({department : department, resolved : true});
+        const history = await Complain.find({department : department, resolved : false});
         res.status(200).json(history);
     } catch (error) {
         console.log(error);

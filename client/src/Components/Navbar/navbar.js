@@ -14,6 +14,9 @@ const Navbar = () => {
         <a href="" class="nav-link" data-content="About Us">
           About Us
         </a>
+        <a href="" class="nav-link" data-content="Login">
+          Login
+        </a>
       </div>
     </nav>
   );

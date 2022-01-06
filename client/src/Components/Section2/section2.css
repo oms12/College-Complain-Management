@@ -13,7 +13,7 @@
   position: absolute;
 }
 .filter_section {
-  height: 65vh;
+  height: 40vh;
   width: 70%;
   margin-top: 30vh;
   margin-bottom: 4vh;
@@ -86,8 +86,9 @@
   height: 10%;
   width: 100%;
   background-color: white;
+  background-color: white;
   z-index: 490;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: black;
   display: flex;
   justify-content: space-evenly;
@@ -95,40 +96,56 @@
   border-bottom: 2px solid black;
 }
 
-.id {
-  width: 22%;
+.section2id {
+  width: 18%;
   color: #2f2e41;
 }
 
-.subject {
-  width: 22%;
+.section2subject {
+  width: 18%;
 }
 
-.department {
-  width: 22%;
+.section2department {
+  width: 18%;
 }
 
-.date {
+.section2date {
   width: 22%;
 }
-
+.section2Details {
+  width: 22%;
+}
 .content_part2 {
   height: 10%;
   width: 100%;
 
   z-index: 490;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: black;
   display: flex;
   justify-content: space-evenly;
   padding-top: 1rem;
-  background-color: black;
-  opacity: 0.5;
+  background-color: #343a40;
+  opacity: 1;
 }
-
+.section2link {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.section2link:hover {
+  color: #6c63ff;
+}
 .id2,
 .subject2,
 .department2,
+.Details,
 .date2 {
   color: white;
 }
