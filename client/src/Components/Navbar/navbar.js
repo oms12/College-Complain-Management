@@ -14,6 +14,26 @@ const Navbar = () => {
         <a href="" class="nav-link" data-content="About Us">
           About Us
         </a>
+
+        <ul>
+          <li className="Log_In">
+            <a href="" class="nav-link" data-content="LogIn">
+              LogIn
+            </a>
+            <ul className="hover">
+              <li className="new">
+                <a href="" className="student">
+                  Student
+                </a>
+              </li>
+              <li className="new">
+                <a href="" className="admin">
+                  Admin
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </nav>
   );

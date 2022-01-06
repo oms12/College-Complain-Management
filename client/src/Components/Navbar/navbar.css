@@ -51,3 +51,64 @@
 .nav-link:hover::before {
   width: 100%;
 }
+
+.Log_In {
+  position: relative;
+  font-size: 2rem;
+  color: white;
+  width: 100%;
+}
+.hover {
+  padding-top: 2rem;
+  background-color: #343a40;
+  height: 100px;
+  width: 100px;
+}
+
+.new {
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: white !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+.new a {
+  color: white;
+  background-color: #343a40;
+  width: 120%;
+  height: 100%;
+}
+
+ul li ul {
+  display: none;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+ul li {
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+ul li:hover > ul {
+  display: block;
+}
+.student {
+  width: 110%;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.student:hover,
+.admin:hover {
+  color: #6c63ff;
+}

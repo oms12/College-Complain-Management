@@ -50,6 +50,15 @@ const AdminComplaints = () => {
           required
         ></textarea>
         <br />
+
+        <br />
+        <label for="resolved-msg">Resolved Text </label>
+        <textarea
+          id="resolved-msg"
+          placeholder="e.g please inform complains authority"
+          required
+        ></textarea>
+        <br />
         <button class="btn">Resolve Complaint</button>
       </div>
     </div>

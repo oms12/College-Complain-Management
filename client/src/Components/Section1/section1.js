@@ -33,7 +33,7 @@ const Section = () => {
         </div>
         <div className="section1__image_part">
           {/* <img src={require("./Image/pic1.svg")} className="img1" /> */}
-          <img src={Reactlogo} className="img2" />
+          <img src={Reactlogo} className="img3" />
           <svg />
         </div>
       </div>

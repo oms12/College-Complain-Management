@@ -6,11 +6,6 @@
   z-index: 56;
 }
 
-.nav-link3 {
-  font-size: 2rem;
-  color: white;
-}
-
 .navbar3 {
   display: flex;
   justify-content: space-between;
@@ -22,9 +17,15 @@
 }
 .nav-list3 {
   display: flex;
-  width: 30%;
+  width: 45% !important;
   justify-content: space-between;
   padding: 2rem 3rem 2rem 2rem;
+}
+
+.nav-link3 {
+  font-size: 2rem;
+  color: white;
+  margin-right: 3rem;
 }
 
 .blue3 {

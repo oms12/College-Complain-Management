@@ -7,6 +7,16 @@ const Student_Page = () => {
     <div className="STUDENT_PAGE">
       <img src={image} alt="" className="img2" />
       <div className="student_history">
+        <form action="">
+          <select className="select">
+            <option value="No Filter" default>
+              No Filter
+            </option>
+            <option value="Sport">Sports</option>
+            <option value="meals">Meals</option>
+            <option value="library">Library</option>
+          </select>
+        </form>
         <div className="title">
           <div className="department">Department</div>
           <div className="subject">Subject</div>
